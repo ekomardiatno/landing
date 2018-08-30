@@ -19,7 +19,8 @@ gulp.task('build-html', function() {
         // Menggunakan plugin `gulp-file-include`
         .pipe(fileInclude())
         // Tulis HTML ke folder `dist`
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest('dist'))
+        .pipe(gulpConnect.reload());
 });
 
 // Compile Sass file
@@ -73,6 +74,34 @@ gulp.task('fonts', function() {
         .pipe(gulpConnect.reload());
 });
 
+
+// Get libs js
+gulp.task('libs-js', function() { 
+    gulp.src([
+        config.bowerDir + '/jquery/dist/jquery.min.js',
+        config.bowerDir + '/bootstrap/dist/js/bootstrap.min.js'
+        ])
+        .pipe(gulp.dest('./dist/libs/js')); 
+});
+
+// Get libs fonts
+gulp.task('libs-font', function() { 
+    gulp.src([
+        config.bowerDir + '/ionicons/docs/fonts/*.**',
+        config.bowerDir + '/bootstrap/fonts/*.**',
+        ])
+        .pipe(gulp.dest('./dist/libs/fonts')); 
+});
+
+// Get libs css
+gulp.task('libs-css', function() { 
+    gulp.src([
+        config.bowerDir + '/bootstrap/dist/css/bootstrap.min.css',
+        config.bowerDir + '/ionicons/docs/css/*.**',
+        ])
+        .pipe(gulp.dest('./dist/libs/css')); 
+});
+
 // Jalankan server dan live reload
 gulp.task('connect', function() {
 	gulpConnect.server({
@@ -109,7 +138,10 @@ gulp.task('build', [
     'scripts',
     'images',
     'fonts',
-    'css'
+    'css',
+    'libs-css',
+    'libs-font',
+    'libs-js'
 ]);
 
 gulp.task('default', [

@@ -1,0 +1,45 @@
+.btn {
+	padding: 8px 12px;
+	border-radius: 20px;
+	box-shadow: 3px 8px 20px rgba(0,0,0,.25);
+}
+.btn-primary {
+	background: $brand-primary;
+	border-color: $brand-primary;
+	&:hover, &:focus {
+		background: $brand-primary-dark;
+		border-color: $brand-primary-dark;
+	}
+}
+.btn-info {
+	background: $brand-info;
+	border-color: $brand-info;
+	&:hover, &:focus {
+		background: $brand-info-dark;
+		border-color: $brand-info-dark;
+	}
+}
+.btn-success {
+	background: $brand-success;
+	border-color: $brand-success;
+	&:hover, &:focus {
+		background: $brand-success-dark;
+		border-color: $brand-success-dark;
+	}
+}
+.btn-warning {
+	background: $brand-warning;
+	border-color: $brand-warning;
+	&:hover, &:focus {
+		background: $brand-warning-dark;
+		border-color: $brand-warning-dark;
+	}
+}
+.btn-danger {
+	background: $brand-danger;
+	border-color: $brand-danger;
+	&:hover, &:focus {
+		background: $brand-danger-dark;
+		border-color: $brand-danger-dark;
+	}
+}

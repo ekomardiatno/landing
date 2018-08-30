@@ -1,0 +1,28 @@
+.nav-tabs {
+	text-align:center;
+	margin-bottom: 30px;
+	li {
+		float: none;
+		display: inline-block;
+		.btn {
+			box-shadow: none;
+			&.btn-danger {
+				&:hover, &:focus {
+					background: $brand-danger-dark;
+					border-color: $brand-danger-dark;
+				}
+			}
+		}
+		&.active {
+			.btn {
+				&.btn-danger {
+					background: transparent;
+					&:hover, &:focus {
+						background: transparent;
+						border-color: #ddd;
+					}
+				}
+			}
+		}
+	}
+}

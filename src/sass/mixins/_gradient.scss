@@ -1,0 +1,14 @@
+@mixin linear-gradient($deg,$color1,$color2){
+	background: -webkit-linear-gradient($deg,$color1,$color2);
+	background: -moz-linear-gradient($deg,$color1,$color2);
+	background: -ms-linear-gradient($deg,$color1,$color2);
+	background: -o-linear-gradient($deg,$color1,$color2);
+  	background: linear-gradient($deg,$color1,$color2);
+}
+@mixin radial-gradient($color1,$color2){
+	background: -webkit-radial-gradient($color1,$color2);
+	background: -moz-radial-gradient($color1,$color2);
+	background: -ms-radial-gradient($color1,$color2);
+	background: -o-radial-gradient($color1,$color2);
+  	background: radial-gradient($color1,$color2);
+}

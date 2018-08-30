@@ -1,0 +1,50 @@
+.card {
+	background: $white;
+	border-radius: 8px;
+	box-shadow: 0 0 50px rgba(0,0,0,.08);
+	overflow: hidden;
+	padding: 20px;
+	margin-bottom: 20px;
+	text-align:center;
+	transition: all .35s ease;
+
+	&:hover {
+		box-shadow: 0 15px 100px rgba(0,0,0,.15);
+		transform: translateY(-5px);
+	}
+
+	.card-heading {
+		padding: 15px;
+		border-bottom: 1px solid #ddd;
+		img {
+			display: inline-block;
+			max-height: 65px;
+			max-width: 100%;
+		}
+		.icon {
+			font-size: 57px;
+		}
+	}
+	.card-body {
+		padding: 15px 0;
+		height: 125px;
+		overflow: hidden;
+		.title-project {
+			font-family: Roboto, sans-serif;
+			letter-spacing: -1px;
+			a {
+				display: inline-block;
+				text-transform: uppercase;
+				font-size: 19px;
+				color: $brand-danger;
+				font-weight: 700;
+				margin-bottom: 10px;
+			}
+		}
+		.snippet-project {
+			font-family: Roboto, sans-serif;
+			color: $gray;
+			line-height: 26px;
+		}
+	}
+}

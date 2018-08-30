@@ -1,0 +1,99 @@
+@media (min-width: $screen-sm-min){
+	.button-menu {
+		display: none;
+	}
+}
+@media (max-width: $screen-sm-max){
+	.section-top {
+		.h1-section-top {
+			color: $white;
+			text-shadow: 1px 1px 5px rgba(0,0,0,1);
+		}
+	}
+
+	.footer {
+		.footer-bottom {
+			.credit, .socmed {
+				padding: 5px 0;
+				text-align: center;
+			}
+		}
+	}
+}
+@media (max-width: $screen-xs-max){
+	.section-top {
+		@include linear-gradient(45deg,$brand-danger,$brand-purple);
+		height: auto;
+		padding: 100px 0;
+		.h1-section-top {
+			font-size: 2em;
+		}
+	}
+
+	// Navbar
+	.navbar {
+		padding: 5px 0;
+		.navbar-brand {
+			padding: 15px;
+			height: 50px;
+		}
+		&.affix-top {
+			.navbar-brand {
+				color: $white;
+			}
+			.navbar-collapse {
+				.nav {
+					li {
+						a {
+							&.bordered {
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.navbar-collapse {
+			display: block;
+			position: fixed;
+			top: 0;
+			left: -240px;
+			width: 240px;
+			max-height: none;
+			height: 100vh;
+			padding: 50px 15px;
+			@include linear-gradient(0deg,$brand-warning,$brand-danger);
+			border: 0;
+			margin: 0;
+			transition: all .35s ease;
+			&.active {
+				left: 0;
+			}
+			.nav {
+				margin: 0;
+				li {
+					a {
+						&.bordered {
+						}
+					}
+				}
+			}
+		}
+
+		&.affix {
+			.navbar-collapse {
+				.nav {
+					li {
+						a {
+							color: $white;
+							&.bordered{
+								border-color: $white;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+}

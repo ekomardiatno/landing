@@ -1,0 +1,50 @@
+// GLOBAL VALUES
+$gray-base:              		#333 !default;
+$gray-darker:            		darken($gray-base, 10%) !default;
+$gray-dark:              		darken($gray-base, 5%) !default;
+$gray:                   		lighten($gray-base, 5%) !default;
+$gray-light:             		lighten($gray-base, 15%) !default;
+$gray-lighter:           		lighten($gray-base, 25%) !default;
+$white:							#fff;
+
+// BRAND COLORS
+$brand-primary:         		#22A7F0;
+$brand-success:         		#2ECC71;
+$brand-info:            		#27CBC0;
+$brand-warning:         		#F9B32F;
+$brand-danger:          		#FA5C98;
+$brand-purple:                  #AB69C6;
+$brand-primary-dark:         	darken($brand-primary, 5%);
+$brand-success-dark:         	darken($brand-success, 5%);
+$brand-info-dark:            	darken($brand-info, 5%);
+$brand-warning-dark:         	darken($brand-warning, 5%);
+$brand-danger-dark:          	darken($brand-danger, 5%);
+$brand-purple-dark:             darken($brand-purple, 5%);
+
+// GLOBAL COLOR ON
+$body-bg:               linear-gradient(to bottom, #fefefe 40%, #f7f5f9);
+$text-color:            $gray-base !default;
+$link-color:            $brand-primary !default;
+$link-hover-color:      darken($link-color, 15%) !default;
+
+// Media Screen
+$screen-xs:                  480px;
+$screen-xs-min:              $screen-xs;
+$screen-phone:               $screen-xs-min;
+
+$screen-sm:                  768px;
+$screen-sm-min:              $screen-sm;
+$screen-tablet:              $screen-sm-min;
+
+$screen-md:                  992px;
+$screen-md-min:              $screen-md;
+$screen-desktop:             $screen-md-min;
+
+$screen-lg:                  1200px;
+$screen-lg-min:              $screen-lg;
+$screen-lg-desktop:          $screen-lg-min;
+
+$screen-xs-max:              ($screen-sm-min - 1);
+$screen-sm-max:              ($screen-md-min - 1);
+$screen-md-max:              ($screen-lg-min - 1);
+
