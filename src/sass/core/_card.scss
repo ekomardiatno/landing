@@ -39,6 +39,10 @@
 				color: $brand-danger;
 				font-weight: 700;
 				margin-bottom: 10px;
+				transition: all .35s;
+				&:hover, &:focus {
+					color: $gray-light;
+				}
 			}
 		}
 		.snippet-project {

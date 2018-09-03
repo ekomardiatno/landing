@@ -12,13 +12,21 @@
 			li {
 				a {
 					color: $gray-light;
+					&:hover, &:focus {
+						color: $brand-danger;
+					}
 					&.bordered {
 						border-color: $gray-light;
+						&:hover, &:focus {
+							color: $white;
+							background: $gray-light;
+						}
 					}
 				}
 			}
 		}
 	}
+	
 	.navbar-brand {
 		font-size: 1.35em;
 		height: 70px;
